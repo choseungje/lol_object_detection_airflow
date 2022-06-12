@@ -40,8 +40,10 @@ http://localhost:8081/ 에 접근합니다.
 Username, Password 모두 `airflow` 입니다.
 
 아래 사진처럼 lol dag를 클릭합니다.
+![dag](./images/dag.png)
 
 이후 Trigger DAG를 실행시키면 모든 task가 실행되며 Grid 창에서 진행 상태 및 결과를 확인하실 수 있습니다.
+![result](./images/result.png)
 
 ## Airflow Server Down
 
