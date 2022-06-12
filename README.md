@@ -46,7 +46,6 @@ Username, Password 모두 `airflow` 입니다.
 ![result](./images/result.png)
 
 ## Result Video Sample
-약 20초 후 부터 미니맵이 나옵니다!
 
 ![sample](sample.gif)
 
