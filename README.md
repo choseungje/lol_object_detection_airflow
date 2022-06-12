@@ -1,4 +1,4 @@
-# lol_object_detection_airflow
+# LOL Object Detection Airflow
 
 [해당 프로그램](https://github.com/choseungje/lol_object_detection)과 기능은 동일하며 [Airflow](https://airflow.apache.org/docs/)를 적용한 버전입니다.
 
