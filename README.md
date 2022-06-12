@@ -2,6 +2,7 @@
 
 [해당 프로그램](https://github.com/choseungje/lol_object_detection)과 기능은 동일하며 [Airflow](https://airflow.apache.org/docs/)를 적용한 버전입니다.
 
+## Airflow 도입 목적
 [기존 프로그램](https://github.com/choseungje/lol_object_detection)에서의 Data Pipeline은 아래와 같습니다.
 
 1. 훈련 데이터셋 생성
@@ -9,7 +10,8 @@
 3. Object Detection Model Training
 4. LOL champine Object Detection
 
-기존에도 Task를 분리시켜 script 파일을 만들어 실행시켰지만, Airflow를 도입해 보다 뚜렷한 Task의 구분을 목표로 했습니다.
+- [x] 기존에도 Task를 분리시켜 script 파일을 만들어 실행시켰지만, Airflow를 도입해 보다 뚜렷한 Task의 구분을 목표.
+- [ ] 훈련 데이터셋 생성, youtube mp4 다운로드는 순차적으로 수행될 필요가 없고, Training을 위해선 2개의 Task가 모두 완료되어야 하기 때문에 병렬로 수행을 목표
 
 GPU를 연결하지 않아 훈련 및 추론 속도가 느립니다. 따라서 빠른 실행을 위해 훈련 데이터 개수, Epochs = 1, mp4 영상 길이는 3분으로 조절했습니다.
 
