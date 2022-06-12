@@ -26,6 +26,8 @@ mkdir -p ./logs ./plugins
 # 호스트, 컨테이너 파일 권한 설정
 echo -e "AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0" > .env
 
+docker build -t local/test:latest -f Dockerfile .
+
 docker-compose up airflow-init
 docker-compose up -d
 ```
