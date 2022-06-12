@@ -149,6 +149,7 @@ services:
       <<: *airflow-common-depends-on
       airflow-init:
         condition: service_completed_successfully
+    shm_size: '10gb'
 
   airflow-triggerer:
     <<: *airflow-common
