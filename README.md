@@ -45,6 +45,11 @@ Username, Password 모두 `airflow` 입니다.
 이후 Trigger DAG를 실행시키면 모든 task가 실행되며 Grid 창에서 진행 상태 및 결과를 확인하실 수 있습니다.
 ![result](./images/result.png)
 
+## Result Video Sample
+약 20초 후 부터 미니맵이 나옵니다!
+
+![sample](sample.gif)
+
 ## Airflow Server Down
 
 ```shell
